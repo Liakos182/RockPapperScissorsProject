@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS-evil AI</title>
- <script src="rockPapperScissors.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>RPS</title>
+    <!--<script src="rockPapperScissors.js" defer></script>-->
 </head>
 <body>
-    <h1>EVIL AI PLAYGROUND</h1>
+    <!--The header just holds the title and two buttons, one that resets the game and one that
+    links to a rulle sheat-->
+    <header id="header">
+        <div class="container">
+            <h1 class="logo">ROCK PAPER SCISSORS</h1>
+            <ul class="headerBtn">
+                <li>Reset</li>
+                <li><a href="../RockPapperScissorsProject/hot.html" target="_blank">Hotkeys & Rules</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--The main will be the main game interface. It will hold 3 main elements in a flexbox.
+        The first one which will be like a side bar will be the players main input it will include the 3 buttons.
+        The middle section will be a score board-message board, prob 2 divs in a container.
+        The last section that will be on the far right of the screen 
+        will be a div with in a container that will display an image with the computers choise.
+    -->
+    <main id="main">
+        
+    
+    <div id="buttonPanel">
+        <button class="button"><img src="../RockPapperScissorsProject/images/Rock.png" class="btn-image" alt="an icon of a cartonish rock">Rock</button>
+        <button class="button"><img src="../RockPapperScissorsProject/images/papper1.png" class="btn-image" alt="an icon of cartonish piece of paper">Paper</button>
+        <button class="button"><img src="../RockPapperScissorsProject/images/scissors.png" class="btn-image" alt="an icon of cartonish pair of scissors">Scissors</button>
+    </div>
+    <div id="mainScreen" >
+        <div id="scoreBoard" class="screen">
+            <div class="score" ><h1>YOU</h1><h1 class="totalScore">1</h1></div>
+            <div class="score"><h1>HOME</h1><h1 class="totalScore">0</h1 ></div>
+        </div>
+        <div id="round" class="screen"><h1>Round 1 choose your wepon</h1></div>
+        
+        
+    </div>
+    <div id="computerSection">
+        <div id="computerDisplay"></div>
+
+    </div>
+
+</main>
+
 </body>
+
 </html>
