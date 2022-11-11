@@ -21,6 +21,16 @@ body{
     margin: 0 auto;
     padding: 0 30px;
 }*/
+#header{
+    position: relative;
+    animation-name:header ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes header{
+    0%{top:-5000px;}
+    100%{top:0px;}
+}
 #header .container{
     background-color: #f4f4f4;
     display: flex;
@@ -57,7 +67,14 @@ justify-content: space-between;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+    position: relative;
+    animation-name:left ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes left{
+    0%{left:-5000px;}
+    100%{left:0px;}
 }
 .button{
     width: 90px;
@@ -74,7 +91,15 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
+    animation-name:bottom ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
     
+}
+@keyframes bottom{
+    0%{bottom:-5000px;}
+    100%{bottom:0px;}
 }
 .screen{
     width: 100%;
@@ -110,9 +135,23 @@ justify-content: space-between;
     background-color: #f4f4f4;
     width: 295px;
     height: 550px;
+    position: relative;
+    animation-name:right ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes right{
+    0%{right:-5000px;}
+    100%{right:0px;}
 }
 #computerDisplay{
     background-color: white;
     width: 190px;
     height: 190px;
+}
+#computerImage{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
 }
