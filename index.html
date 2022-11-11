@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>RPS</title>
-    <!--<script src="rockPapperScissors.js" defer></script>-->
+    <script src="rockPapperScissors.js" defer></script>
 </head>
 <body>
     <!--The header just holds the title and two buttons, one that resets the game and one that
@@ -15,7 +15,7 @@
         <div class="container">
             <h1 class="logo">ROCK PAPER SCISSORS</h1>
             <ul class="headerBtn">
-                <li>Reset</li>
+                <li><button id="Reset">Reset</button></li>
                 <li><a href="../RockPapperScissorsProject/hot.html" target="_blank">Hotkeys & Rules</a></li>
             </ul>
         </div>
@@ -30,16 +30,16 @@
         
     
     <div id="buttonPanel">
-        <button class="button"><img src="../RockPapperScissorsProject/images/Rock.png" class="btn-image" alt="an icon of a cartonish rock">Rock</button>
-        <button class="button"><img src="../RockPapperScissorsProject/images/papper1.png" class="btn-image" alt="an icon of cartonish piece of paper">Paper</button>
-        <button class="button"><img src="../RockPapperScissorsProject/images/scissors.png" class="btn-image" alt="an icon of cartonish pair of scissors">Scissors</button>
+        <button id = "Rock" class="button"><img src="../RockPapperScissorsProject/images/Rock.png" class="btn-image" alt="an icon of a cartonish rock">Rock</button>
+        <button id = "Paper" class="button"><img src="../RockPapperScissorsProject/images/papper1.png" class="btn-image" alt="an icon of cartonish piece of paper">Paper</button>
+        <button id = "Scissors" class="button"><img src="../RockPapperScissorsProject/images/scissors.png" class="btn-image" alt="an icon of cartonish pair of scissors">Scissors</button>
     </div>
     <div id="mainScreen" >
         <div id="scoreBoard" class="screen">
-            <div class="score" ><h1>YOU</h1><h1 class="totalScore">1</h1></div>
-            <div class="score"><h1>HOME</h1><h1 class="totalScore">0</h1 ></div>
+            <div class="score" ><h1>YOU</h1><h1 id="totalScorePlayer">0</h1></div>
+            <div class="score"><h1>HOME</h1><h1 id="totalScoreComputer">0</h1 ></div>
         </div>
-        <div id="round" class="screen"><h1>Round 1 choose your wepon</h1></div>
+        <div id="round" class="screen"><h1>Best of five wins!</h1></div>
         
         
     </div>
